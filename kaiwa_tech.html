@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        font-family: 'Roboto', sans-serif;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #ecf0f1;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+        gap: 40px;
+      }
+      .text-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-container img {
+        max-width: 600px;
+        max-height: 400px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      .info-box {
+        background: rgba(52, 152, 219, 0.2);
+        border-left: 4px solid #3498db;
+        padding: 16px;
+        margin-bottom: 20px;
+        border-radius: 0 4px 4px 0;
+      }
+      .timeline {
+        margin-top: 20px;
+      }
+      .timeline-item {
+        display: flex;
+        margin-bottom: 12px;
+      }
+      .timeline-year {
+        width: 80px;
+        font-weight: bold;
+        color: #2ecc71;
+      }
+      .source {
+        font-size: 14px;
+        margin-top: 20px;
+        color: #ecf0f1;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="title">Key Players and Developments</div>
+      
+      <div class="content-container">
+        <div class="text-content">
+          <div class="info-box">
+            <p class="text-xl font-semibold mb-2">Kaiwa Technology</p>
+            <p>Founded by Dr. Zhang Qifeng in Guangzhou, China</p>
+            <p>Affiliated with Nanyang Technological University</p>
+          </div>
+          
+          <p class="text-lg mb-4">The company is developing a humanoid robot with an artificial womb embedded in its abdomen, designed to carry a fetus for ten months and deliver a baby.</p>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2025</div>
+              <div>Concept presented at the World Robot Conference in Beijing</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2026</div>
+              <div>Projected debut of the first prototype</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">~$14,000</div>
+              <div>Expected cost (100,000 yuan) - significantly less than human surrogacy</div>
+            </div>
+          </div>
+          
+          <p class="mt-4">According to Dr. Zhang: <em>"The artificial womb technology is already in a mature stage, and now it needs to be implanted in the robot's abdomen."</em></p>
+          
+          <div class="source">Sources: New York Post (Aug 17, 2025), MSN, Interesting Engineering</div>
+        </div>
+        
+        <div class="image-container">
+          <img src="/home/ubuntu/upload/search_images/hSwgx6iDYLZm.jpg" alt="Concept image of a humanoid robot with pregnant appearance">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
